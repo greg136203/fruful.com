@@ -1,0 +1,68 @@
+﻿<html>
+	<head>
+		<title>戰績生成器</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+		<style id="filter_buff0">
+		.buff0 {
+			display: table-row;
+		}
+		</style>
+	</head>
+
+	<body>
+		<table class="myTable">
+			<tbody>
+				<tr>
+					<th style="width: 200px;">周目數</th>
+					<td><input type="text" id="time" class="user_data"></td>
+				</tr>
+				<tr>
+					<th style="width: 200px;">王</th>
+					<td><select id="boss" class="user_data">
+							<option value="1">1王</option>
+							<option value="2">2王</option>
+							<option value="3">3王</option>
+							<option value="4">4王</option>
+							<option value="5">5王</option>
+					</select></td>
+				</tr>
+				<tr>
+					<th style="width: 200px;">玩家名稱</th>
+					<td><select id="player" class="user_data"></select></td>
+				</tr>
+				<tr>
+					<th style="width: 200px;">隊伍</th>
+					<td><select id="team1" class="user_data team"></select> <select
+						id="team2" class="user_data team"></select> <select id="team3"
+						class="user_data team"></select> <select id="team4"
+						class="user_data team"></select> <select id="team5"
+						class="user_data team"></select></td>
+				</tr>
+				<tr>
+					<th style="width: 200px;">角色</th>
+					<td id="characterList"></td>
+				</tr>
+				<tr>
+					<th style="width: 200px;">傷害</th>
+					<td><input type="text" id="damage" class="user_data"></td>
+				</tr>
+				<tr>
+					<th style="width: 200px;">產生HTML</th>
+					<td>
+						<button type="button" class="my_button my_data"
+							onclick="javaScripts:generateData();">生成</button>
+					</td>
+				</tr>
+				<tr>
+					<th style="width: 200px;">html</th>
+					<td><textarea id="result"></textarea></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/filter.js"></script>
+	<script type="text/javascript" src="js/generate.js"></script>
+</html>
